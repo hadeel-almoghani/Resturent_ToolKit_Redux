@@ -11,7 +11,7 @@ function Cart() {
   const dispatch = useDispatch();
 
   const [showAllItems, setShowAllItems] = useState(false);
-  const totalPrice = cartItems.reduce((total, item) => total + item.price * item.quantity, 0); // تحديث السعر النهائي
+  const totalPrice = cartItems.reduce((total, item) => total + item.price * item.quantity, 0); 
 
   const visibleCartItems = showAllItems ? cartItems : cartItems.slice(0, 3);
 
