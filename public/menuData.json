@@ -1,0 +1,50 @@
+[
+    {
+      "id": 1,
+      "name": "Burger",
+      "price": 10,
+      "image": "./images/f2.png"
+    },
+    {
+      "id": 2,
+      "name": "Pizza",
+      "price": 15,
+      "image": "./images/f3.png"
+    },
+    {
+        "id": 3,
+        "name": "Pasta",
+        "price": 30,
+        "image": "./images/logo192.png"
+      },
+      {
+          "id": 4,
+          "name": "Pasta",
+          "price": 25,
+          "image": "./images/f7.png"
+        },
+        {
+          "id": 5,
+          "name": "Burger",
+          "price": 10,
+          "image": "./images/f2.png"
+        },
+        {
+          "id": 6,
+          "name": "Pizza",
+          "price": 15,
+          "image": "./images/f3.png"
+        }, {
+          "id": 7,
+          "name": "Burger",
+          "price": 10,
+          "image": "./images/f2.png"
+        },
+        {
+          "id": 8,
+          "name": "Pizza",
+          "price": 15,
+          "image": "./images/f3.png"
+        }
+  ]
+  
