@@ -25,16 +25,16 @@ const cartSlice = createSlice({
       const itemIdToRemove = action.payload;
       return state.map(item => {
         if (item.id === itemIdToRemove) {
-          if (item.quantity > 1) {
-            return { ...item, quantity: item.quantity - 1 }; 
+          if (item.quantity === 1) {
+            return undefined; 
           } else {
-            return item;
+            return { ...item, quantity: item.quantity - 1 };
           }
-        } else {
-          return item;
         }
-      });
+        return item;
+      }).filter(item => item !== undefined); 
     },
+    
   },
 });
 
