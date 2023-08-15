@@ -8,7 +8,7 @@ const cartSlice = createSlice({
       const existingItemIndex = state.findIndex(item => item.id === action.payload.id);
 
       if (existingItemIndex !== -1) {
-        state[existingItemIndex].quantity++; // زيادة العدد
+        state[existingItemIndex].quantity++;
       } else {
         state.push({ ...action.payload, quantity: 1 });
       }
@@ -18,7 +18,7 @@ const cartSlice = createSlice({
       const item = state.find(item => item.id === id);
       
       if (item) {
-        item.quantity++; // زيادة العدد
+        item.quantity++; 
       }
     },
     removeItemFromCart: (state, action) => {
@@ -26,7 +26,7 @@ const cartSlice = createSlice({
       return state.map(item => {
         if (item.id === itemIdToRemove) {
           if (item.quantity > 1) {
-            return { ...item, quantity: item.quantity - 1 }; // تقليل العدد
+            return { ...item, quantity: item.quantity - 1 }; 
           } else {
             return item;
           }
