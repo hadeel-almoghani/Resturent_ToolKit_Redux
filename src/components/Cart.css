@@ -1,9 +1,4 @@
-.cart {
-    background-color: #f8f8f8;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  }
+
   
   .cart-header {
     display: flex;
@@ -79,4 +74,35 @@ button.remove-button {
 .cart-items {
   max-height: 400px; 
   overflow-y: auto; 
+}
+.card-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.639);
+  z-index: 99999;
+}
+.cart {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  background: #fff;
+  z-index: 999999;
+}
+.cart__close svg.svg-inline--fa.fa-xmark {
+  width: 20px;
+  height: 20px;
+  background: #000;
+  color: #fff;
+  border-radius: 50%;
+  padding: 7px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
 }

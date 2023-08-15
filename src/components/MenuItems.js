@@ -17,6 +17,7 @@ function MenuItems() {
       .then(data => dispatch(setMenuItems(data)));
   }, [dispatch]);
 
+  
   return (
     <div className="menu-container">
       {menuItems.map(item => (
