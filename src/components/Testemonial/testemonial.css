@@ -1,0 +1,15 @@
+.testimonials {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.testimonial-item {
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.slick-dots li button:before {
+  font-size: 10px;
+  color: #fff;
+}

@@ -6,13 +6,34 @@ body {
   background-color: #f3f3f3;
 }
 
-
-
-
-.menu-container {
-  display: flex;
-  flex-wrap: wrap;
+.container-fluid {
+  padding: 0 !important;
 }
+
+.section-header h2 {
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  color: #7f7f90;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+
+}
+
+.section-header p {
+  margin-bottom: 3rem;
+  font-size: 40px;
+  font-weight: 400;
+  font-family: var(--font-primary);
+}
+
+.section-header p span {
+  color: #df2020;
+}
+
+
 
 .cart {
 
@@ -70,3 +91,9 @@ body {
   top: 0;
 }
 
+.text-center{
+  text-align: center;
+}
+.Food-pop{
+margin-top: 4rem;
+}

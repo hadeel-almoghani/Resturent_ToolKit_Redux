@@ -1,0 +1,20 @@
+{
+  "sectionTitle": "آراء العملاء",
+  "sectionSubtitle": "شاركنا تجربتك معنا",
+  "slides": [
+    {
+      "content": "محتوى تجربي 1",
+      "name": "عميل 1",
+      "role": "مدير",
+      "stars": 5,
+      "image": ""
+    },
+    {
+      "content": "محتوى تجربي 2",
+      "name": "عميل 2",
+      "role": "مطور",
+      "stars": 4,
+      "image": ""
+    }
+  ]
+}

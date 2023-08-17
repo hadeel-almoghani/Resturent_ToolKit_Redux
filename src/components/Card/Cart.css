@@ -106,3 +106,18 @@ button.remove-button {
 .hidden {
   display: none;
 }
+.total-price {
+  font-size: 18px;
+  font-weight: bold;
+  position: absolute;
+  bottom: 0;
+  background: #f44336;
+  width: 100%;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 79px;
+  gap: 2rem;
+  color: #fff;
+}

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { toast } from "react-toastify";
-import { removeItemFromCart } from "../store/cartSlice";
+import { removeItemFromCart } from "../../store/cartSlice";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash, faTimes, faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import "./Cart.css";
@@ -73,7 +73,7 @@ function Cart() {
           </div>
         </div>
       )}
-    
+   
     </div>
   );
 }
