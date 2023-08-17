@@ -11,10 +11,11 @@ function TestimonialsSection() {
   const testimonials = useSelector(state => state.testimonials); 
 
   useEffect(() => {
-    fetch('./testimonialsData.json') 
+    fetch('/testimonialsData.json') 
       .then(response => response.json())
       .then(data => {
-        dispatch(setTestimonials(data)); 
+        console.log(data);
+        dispatch(setTestimonials(data.slides)); 
       });
   }, [dispatch]);
 
@@ -37,7 +38,8 @@ function TestimonialsSection() {
         </div>
         
         <Slider {...sliderSettings}>
-          {testimonials.slides.map((slide, index) => (
+          {console.log(testimonials)}
+          {testimonials.data?.map((slide, index) => (
             <div className="testimonial-item" key={index}>
               <div className="row gy-4 justify-content-center">
                 <div className="col-lg-6">
