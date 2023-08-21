@@ -1,21 +1,22 @@
-import React, { useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { setTestimonials } from '../../store/testimonialsSlice';
-import './testemonial.css'; 
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+import React, { useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { setTestimonials } from "../../store/testimonialsSlice";
+import { Container, Row, Col, ListGroup, ListGroupItem } from "reactstrap";
+import "./testemonial.css";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function TestimonialsSection() {
   const dispatch = useDispatch();
-  const testimonials = useSelector(state => state.testimonials); 
+  const testimonials = useSelector((state) => state.testimonials);
 
   useEffect(() => {
-    fetch('/testimonialsData.json') 
-      .then(response => response.json())
-      .then(data => {
+    fetch("/testimonialsData.json")
+      .then((response) => response.json())
+      .then((data) => {
         console.log(data);
-        dispatch(setTestimonials(data.slides)); 
+        dispatch(setTestimonials(data.slides));
       });
   }, [dispatch]);
 
@@ -33,11 +34,25 @@ function TestimonialsSection() {
     <section className="testimonials section-bg">
       <div className="container aos-init aos-animate" data-aos="fade-up">
         <div className="section-header">
-          <h2>{testimonials.sectionTitle}</h2>
-          <p>{testimonials.sectionSubtitle}</p>
-        </div>
-        
-        <Slider {...sliderSettings}>
+          <Container>
+            <Row>
+              <Col lg="6" md="6">
+              <div className="testimonial ">
+                <h5 className="testimonial__subtitle mb-4">Testimonial</h5>
+                <h2 className="testimonial__title mb-4">
+                  What our <span>customers</span> are saying
+                </h2>
+                <p className="testimonial__desc">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Distinctio quasi qui minus quos sit perspiciatis inventore
+                  quis provident placeat fugiat!
+                </p>
+
+               
+              </div>
+              </Col>
+              <Col   lg="6" md="6">
+              <Slider {...sliderSettings}>
           {console.log(testimonials)}
           {testimonials.data?.map((slide, index) => (
             <div className="testimonial-item" key={index}>
@@ -61,7 +76,7 @@ function TestimonialsSection() {
                 <div className="col-lg-2 text-center">
                   <img
                     src={slide.image}
-                    className="img-fluid testimonial-img"
+                    className="testimonial-img"
                     alt=""
                   />
                 </div>
@@ -69,6 +84,12 @@ function TestimonialsSection() {
             </div>
           ))}
         </Slider>
+              </Col>
+            </Row>
+          </Container>
+        </div>
+
+       
       </div>
     </section>
   );

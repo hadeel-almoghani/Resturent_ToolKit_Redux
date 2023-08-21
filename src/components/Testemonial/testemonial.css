@@ -1,15 +1,74 @@
+/* في ملف testemonial.css */
+
+/* تنسيق عام للصفحة */
 .testimonials {
-  text-align: center;
-  padding: 40px 0;
+  padding: 80px 0;
+  background-color: #f8f9fa;
+  margin-top: 5rem;
 }
 
+.testimonial {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.testimonial__subtitle {
+  font-size: 18px;
+  color: #555;
+}
+
+.testimonial__title {
+  font-size: 36px;
+  margin-top: 10px;
+}
+
+.testimonial__title span {
+  color:#DF201F;
+}
+
+.testimonial__desc {
+  font-size: 18px;
+  color: #777;
+  margin-top: 20px;
+}
+
+/* تصميم المشاهدات */
 .testimonial-item {
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  width: 450px;
   text-align: center;
-  max-width: 500px;
-  margin: 0 auto;
+
 }
 
-.slick-dots li button:before {
-  font-size: 10px;
-  color: #fff;
+.testimonial-content {
+  margin-bottom: 20px;
+}
+
+.quote-icon-left,
+.quote-icon-right {
+  font-size: 30px;
+  color: #f39c12;
+}
+
+.stars {
+  margin-top: 10px;
+}
+
+.stars i {
+  font-size: 20px;
+  color: #f39c12;
+}
+
+.testimonial-img {
+  max-width: 125px;
+  border-radius: 50%;
+  margin-top: 20px;
+  height: 125px;
+  object-fit: cover;
+}
+
+.testimonials .row{
+align-items: center;
 }

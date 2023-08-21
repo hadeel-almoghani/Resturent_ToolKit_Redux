@@ -1,20 +1,21 @@
 {
-  "sectionTitle": "آراء العملاء",
-  "sectionSubtitle": "شاركنا تجربتك معنا",
+  "sectionTitle": "Customer Testimonials",
+  "sectionSubtitle": "Discover what our customers have to say about our products",
   "slides": [
     {
-      "content": "محتوى تجربي 1",
-      "name": "عميل 1",
-      "role": "مدير",
+      "content": "Amazing product with high quality, highly recommend it!",
+      "name": "Ahmed Ali",
+      "role": "Marketing Manager",
       "stars": 5,
-      "image": ""
+      "image": "./images/ava-1.c185d772.jpg"
+    
     },
     {
-      "content": "محتوى تجربي 2",
-      "name": "عميل 2",
-      "role": "مطور",
+      "content": "Wonderful and easy experience, can't imagine my life without it!",
+      "name": "Fatima Mohammed",
+      "role": "Graphic Designer",
       "stars": 4,
-      "image": ""
+      "image": "./images/ava-2.11e918c6.jpg"
     }
   ]
 }
